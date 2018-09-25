@@ -81,6 +81,7 @@ a {
 a:hover {
   color: #3b8884;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 /* #endregion Setup HTML Defaults */
@@ -287,5 +288,52 @@ a:hover {
 }
 
 /* #endregion .button */
+/* #region .portfolio */
+.portfolio {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-rows: 17.25rem;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio__link {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__link:focus {
+  outline: none;
+}
+
+.portfolio__link:hover {
+  text-decoration: none;
+}
+
+.portfolio__item {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__image {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__title {
+  background-color: rgba(74, 170, 165, 0.8);
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-kerning: normal;
+  font-weight: normal;
+  letter-spacing: 0.04375rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  position: relative;
+  text-align: center;
+  top: -3.5rem;
+}
+
+/* #endregion .portfolio */
 
 /*# sourceMappingURL=style.css.map */
